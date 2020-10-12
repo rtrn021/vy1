@@ -34,7 +34,7 @@ public class Tests extends TestBase {
   public void t5() {
     Pages.loginPage.loginAsStoreManager();
     Pages.dashboardPage.navigateToModule("Activities", "Calendar Events");
-    Pages.calendarEventsPage.countRecords();
+
 
   }
 
