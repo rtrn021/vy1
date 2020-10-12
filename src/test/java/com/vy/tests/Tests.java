@@ -30,12 +30,4 @@ public class Tests extends TestBase {
 
   }
 
-  @Test
-  public void t5() {
-    Pages.loginPage.loginAsStoreManager();
-    Pages.dashboardPage.navigateToModule("Activities", "Calendar Events");
-
-
-  }
-
 }
