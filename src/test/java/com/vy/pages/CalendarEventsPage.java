@@ -22,7 +22,8 @@ public class CalendarEventsPage extends BasePage {
   @FindBy(xpath = "//div[@class='toolbar']//input")
   public WebElement pageNumber;
 
-  @FindBy(xpath = "//div[@class='toolbar']//button")
+//  @FindBy(xpath = "//div[@class='toolbar']//button")
+  @FindBy(xpath = "//button[@class='btn dropdown-toggle ']")
   public WebElement viewPerPage;
 
   static final String rowsXpath = "//tbody[@class='grid-body']/tr";
@@ -54,7 +55,7 @@ public class CalendarEventsPage extends BasePage {
     System.out
         .println("BrowserUtils.doesElementExist() = " + BrowserUtils.doesElementExist(viewPerPage));
     BrowserUtils.waitForVisibility(viewPerPage, 20);
-    Assert.assertEquals(viewPerPage.getText().strip(), viewPerPageValue);
+    Assert.assertEquals(viewPerPage.getText().trim(), viewPerPageValue);
   }
 
 

@@ -15,6 +15,7 @@ public class Pages {
     loginPage = new LoginPage();
     dashboardPage = new DashboardPage();
     calendarEventsPage = new CalendarEventsPage();
+
   }
 
 }
