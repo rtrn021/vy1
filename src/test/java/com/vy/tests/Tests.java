@@ -20,6 +20,7 @@ public class Tests extends TestBase {
     Pages.dashboardPage.navigateToModule("Activities", "Calendar Events");
     Pages.calendarEventsPage.verifyViewPerPageValue("25");
 
+
   }
 
   @Test
